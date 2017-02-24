@@ -15,11 +15,12 @@ You need to download some software:<br>
 - <strong>STEP 3</strong><br> 
 3.1)After you have successfully moved the binaries in the Node.js project folder,<br> 
 you have to compress, in a <strong>".zip"</strong> file, <strong>one by one all</strong> the folders that are present<br>
-in the <strong>project folder</strong>. <strong>Example: </strong>node_modules.zip, app.zip, resources.zip, etc.<br>
+in the <strong>project folder</strong>.<br>
+<strong>Example: </strong>node_modules.zip, app.zip, resources.zip, etc.<br>
 <br>
 3.2) Now we move on to Advanced BAT to EXE converter.<br> 
-In the homepage of the program we have to insert some codes (one below the other).<br>
-Erases whatever is written and enter the following code:<br>
+In the homepage of the program we have to insert some codes<br>
+Erases whatever is written and enter the following code(one below the other):<br>
 <br>
 <strong>CD %MYFILES%/</strong> (%MYFILES% is the variable given to the location of embedded files. More on that in a sec)<br>
 <br>
@@ -52,9 +53,9 @@ Then thanks to the command "unzip.exe", the program decompresses all the "archiv
 complete structure of the example used in this guide.<br>
 | Project Folder<br>
 |__ App (folder)<br> 
-|_____ Various subfolders and files<br>
+|_____ Various subfolders and files(subfolder of App folder)<br>
 |__ Node_module (folder) <br>
-|______ Various subfolders and files<br>
+|______ Various subfolders and files(subfolder of Node_modules folder)<br>
 |__package.json<br>
 |__TestApp.js<br>
 <br>
@@ -62,6 +63,6 @@ Now all folders within them have other folders (then sub-folders) will be stored
 <br>
 - <strong>Full command structure</strong><br>
 CD %MYFILES%/<br>
-unzip.exe namefolders.zip<br>
-unzip.exe namefolders2.zip<br>
+unzip.exe app.zip<br>
+unzip.exe Node_modules.zip<br>
 node AppTest.js<br>
