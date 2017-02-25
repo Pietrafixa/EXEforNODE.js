@@ -51,7 +51,7 @@ Then thanks to the command "unzip.exe", the program decompresses all the "archiv
 <br>
 - <strong>Optional</strong> 
 complete structure of the example used in this guide.<br>
-| Project Folder<br>
+| Node.js Project Folder<br>
 |__ /App (folder)<br> 
 |______/Various subfolders and files (subfolder of App folder)<br>
 |__ /Node_module (folder) <br>
